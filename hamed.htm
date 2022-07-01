@@ -1,11 +1,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Karo Host For PS4 505 & 672 & 702 & 75X & 900</title>
+<title>Hamed Store For PS4 672 & 900</title>
 <style type="text/css">
 body {
-  <p style="background-image: url('https://hamedstore.github.io/bg.jpg');"> 
-  background-color: #1A1920;  
+	
+
+  
   background-repeat:no-repeat;
   height:95%;
  }
@@ -42,6 +43,28 @@ button:hover {
  font-size:28px;
  color: white;
 }
+	
+.bgdiv {
+    position: relative;
+    z-index: 1;
+    width:450px;
+    height:450px;
+}
+
+.bgdiv .bg {
+    position: absolute;   
+    background: url(https://hamedstore.github.io/bg.jpg) no-repeat center center;
+    background-size:100%;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+     z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}	
+	
  .content {
   width:80%;
   margin-left:7.5%;
@@ -158,6 +181,10 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 </head>
 <body class="bg-darker">
 <div id="container"  style="">
+<div class="bgdiv">
+    <div class="bg"></div>
+    
+</div>
 <span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'>Karo Host For PS4 505 & 672 & 702 & 75X & 900</h1>
 <h1 id=msgs2 style='font-size:25px;text-align:center;color:white;'>Status</h1>
 <div style="text-align:center"  id="MyItems">
@@ -173,9 +200,10 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 
 <div class="content" >
  	<div class="text" >
- 	 <br><span class="yellow" >Designed, Ported and Compiled by :</span >&nbsp;&nbsp; <span class="hue" >Hamed Store</span>
+ 	 <br><span class="yellow" >Designed, Ported and Compiled by :</span >&nbsp;&nbsp; <span class="hue" >Hamed Nwaz</span>
  	</div>
  </div>
 </div>
+	
 </body>
 </html>
