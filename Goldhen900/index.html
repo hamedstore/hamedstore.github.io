@@ -892,11 +892,7 @@ function kernel() {
    }
   }
   chain.run(); 
-  function UnicodeAlert() {
-             alert("ويه ادخل الفلاش يحامد");
-            
-            return false;
-        }
+             alert("hamed insert yours");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
@@ -920,11 +916,8 @@ function kernel() {
             chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
             chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
             chain.run();
-            function UnicodeAlert() {
-             alert("خرجة");
-            
-            return false;
-			}	
+             alert("get it out hamed");
+       	
             setTimeout(jbdone, 50);
         }
         else
