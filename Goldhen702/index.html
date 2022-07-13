@@ -1,5 +1,5 @@
 <html manifest="offlinexmb.manifest">
-<title>Karo Host GoldHEN 7.02 FW</title>
+<title>Hamed Host GoldHEN 7.02 FW</title>
 	<style>
         .switch {
 		  position: relative;
@@ -263,9 +263,9 @@
 .pointer {cursor: pointer;}
 	</style>
 <script>
-  window.applicationCache.ondownloading=function(){document.getElementById("progressx").innerHTML="Caching Started!!"};
+  window.applicationCache.ondownloading=function(){document.getElementById("progressx").innerHTML="بدأ التخزين المؤقت للصفحة"};
   window.applicationCache.onprogress=function(a){document.getElementById("progressx").innerHTML="Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed"};
-  window.applicationCache.oncached=function(){document.getElementById("progressx").innerHTML="Cached Successfully!!";setTimeout(function(){document.getElementById("progressx").innerHTML="Reopen the Page !!"; }, 1500);localStorage.cached702="yes";};
+  window.applicationCache.oncached=function(){document.getElementById("progressx").innerHTML="تم تخزين الصفحة بنجاح";setTimeout(function(){document.getElementById("progressx").innerHTML="قم باطفاء الانترنت واعادة فتح الصفحة"; }, 1500);localStorage.cached702="yes";};
   window.applicationCache.onnoupdate=function(){localStorage.cached702="yes";};
   window.applicationCache.onerror=function(){localStorage.cached702="yes";};
 </script>
@@ -314,7 +314,7 @@ window.postExploit = function()
 		<script src="utils.js"></script>
 		<script src="int64.js"></script>
 		<script src="ps4.js"></script>
-        <h1 id="progressx" class="titleheadx">Loading ...</h1><br>
+        <h1 id="progressx" class="titleheadx">جاري التحميل</h1><br>
 		<button style="opacity:0" id="input1" onfocus="handle2()"></button>
 		<button style="opacity:0" id="input2"></button>
 		<button style="opacity:0" id="input3" onfocus="handle2()"></button>
