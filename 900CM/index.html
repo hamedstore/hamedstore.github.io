@@ -187,13 +187,13 @@ opacity:0.7;
 .pointer {cursor: pointer;}
 
 
-    </style>
+     </style>
 <meta charset="utf-8">
-<title>Karo Host Manual Exploit Compressed Version 9.00 fw</title>
+<title>Hamed Host Manual Exploit Compressed Version 9.00 fw</title>
 		<script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="بدأ التخزين المؤقت للصفحة";};
 			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Reopen the Page !!"; }, 1500);};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="تم تخزين الصفحة بنجاح";setTimeout(function(){document.getElementById("progress").innerHTML="قم باطفاء الانترنت واعادة فتح الصفحة"; }, 1500);};
 		</script>
 <script>
   function loadFile(fileName) {
@@ -922,8 +922,7 @@ Tools.style.display = "none";
 </div>
 <div class="content" >
  	    <div class="text" >
- 	        <br><span style="text-shadow: 4px 4px 4px black;" class="yellow" >Designed, Compiled by :</span >&nbsp;&nbsp; <span style="text-shadow: 4px 4px 4px black;" class="hue" >Karo Sharifi</span>
- 	        <br><br><br><br><span style="text-shadow: 4px 4px 4px black;" class="yellow" >Super Special Thanks To :</span >&nbsp;&nbsp; <a style="font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;">Sleirsgoevy , Al Azif , ChendoChap , SiSTRo ,Specter ,Znullptr ,hippie68 ... </a>
+ 	       <br><span class="yellow" >العنوان عدن كريتر، شارع اكبر، بجوار مسجد خواص 02267257-737324493-774117089 </span >&nbsp;&nbsp; <span class="hue" >حامد شهنواز</span>
 	    </div>
 </div>
 <script>
@@ -1574,13 +1573,13 @@ function kernel() {
    }
   }
   chain.run(); 
-  alert("Insert USB Drive and click OK after You See The Popup Notification, after jailbreak remove usb from PS4");
+  alert("أدخل الفلاش واضغط موافق بعد ظهور الأشعار المنبثق");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
    }
   }
-  chain.run();
+ chain.run();
   if (chain.syscall(23, 0).low == 0) {
 			
             chain.fcall(window.syscalls[73], 0x4000, 0xC000);
@@ -1598,13 +1597,13 @@ function kernel() {
             chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
             chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
             chain.run();
-            alert("Jailbreak done. Remove USB Drive from PS4");
+            alert("تم التهكير بنجاح قم بازالة الفلاش");
             sessionStorage.Exploit="yes";
             setTimeout(load_pocj, 50);
         }
         else
         {
-            alert("failed to trigger exploit kernel heap might be corrupted, try again or reboot the console");
+            alert("فشلت العملية قم بالمحاولة مرة اخرى او اعد تشغيل الجهاز");
             p.write8(0, 0);
         }
  };
