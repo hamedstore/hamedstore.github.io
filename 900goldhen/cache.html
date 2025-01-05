@@ -8,7 +8,7 @@
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));setTimeout(function(){window.msgs.innerHTML="يتم تنزيل الصفحة الان: " + Percent + "%";},500)}
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="✔تم تثبيت الصفحة بنجاح";},1500);setTimeout(function(){window.msgs.innerHTML="... الآن قم واطفئ الانترنت وأعد فتحه المتصفح";},3500);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="✔تم تثبيت الصفحة بنجاح";},1500);setTimeout(function(){window.msgs.innerHTML="... الآن قم واطفئ الانترنت وأعد فتح المتصفح";},3500);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
 <h1>PS4 9.00 FW GoldHEN Host By Hamed Store</h1>
 <hr>
